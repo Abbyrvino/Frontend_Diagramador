@@ -22,7 +22,6 @@ const Diagram = forwardRef((props, ref) => {
   const [connectedUsers, setConnectedUsers] = useState([]);
 
 
-
 const handleLeaveRoom = () => {
   socket.emit('leave_room', { roomCode: props.roomCode, username: 'TuNombreDeUsuario' });
   window.location.href = 'http://localhost:5173/dashboard'; 
